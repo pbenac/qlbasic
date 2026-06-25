@@ -14,13 +14,13 @@ def fits_path(datapath, head, date, filenum):
     filename = prefix_for_head(head) + date + "_" + obsnum_string + ".fits"
     return os.path.join(datapath, filename)
 
-read_path= '/data20/CD5/IFS/jun23/'
+read_path= '/data20/CD5/IMG/jun23/'
 write_path = '/home/pbenac/CD5_fitsfiles/'
 
 date='260623'
-head = 'IFS'
-first = 20361
-last = 20762
+head = 'Im'
+first = 4359
+last = 4550
 nums = np.linspace(first,last,num=(last-first)+1).astype(int)
 
 fns = []
